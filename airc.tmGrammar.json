@@ -29,15 +29,15 @@
 			]
 		},
 		"op": {
-			"match": "push|set|pop|dup|swp|swpb|swpn|tag|ctg|mtg|rot|out|in|raw",
+			"match": "^\\s+(push|set|pop|dup|swp|swpb|swpn|tag|ctg|mtg|rot|out|in|raw)",
 			"name": "keyword.other"
 		},
 		"control": {
-			"match": "if|ifn|loop|end",
+			"match": "^\\s+(if|ifn|loop|end)",
 			"name": "keyword.control"
 		},
 		"math": {
-			"match": "add|sub|mul|div|eq|neq",
+			"match": "^\\s+(add|sub|mul|div|eq|neq)",
 			"name": "keyword.operator"
 		},
 		"char": {
