@@ -1,8 +1,8 @@
 {
   "name": "airc-language",
   "displayName": "Air Language",
-  "description": "Air language highlighting + snippets",
-  "version": "0.2.5",
+  "description": "Air language highlighting",
+  "version": "0.2.6",
   "repository": "https://github.com/Kyllingene/vscode-airc",
   "publisher": "kyllingene",
   "engines": {
