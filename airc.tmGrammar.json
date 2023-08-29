@@ -1,0 +1,72 @@
+{
+	"scopeName": "source.airc",
+	"patterns": [
+		{
+			"include": "#expression"
+		}
+	],
+	"repository": {
+		"expression": {
+			"patterns": [
+				{
+					"include": "#op"
+				},
+				{
+					"include": "#control"
+				},
+				{
+					"include": "#math"
+				},
+				{
+					"include": "#char"
+				},
+				{
+					"include": "#integer"
+				},
+				{
+					"include": "#block-expression"
+				}
+			]
+		},
+		"op": {
+			"match": "push|set|pop|dup|swp|swpb|swpn|tag|ctg|mtg|rot|out|in|raw",
+			"name": "keyword.other"
+		},
+		"control": {
+			"match": "if|ifn|loop|end",
+			"name": "keyword.control"
+		},
+		"math": {
+			"match": "add|sub|mul|div|eq|neq",
+			"name": "keyword.operator"
+		},
+		"char": {
+			"match": "'.|\\n'",
+			"name": "string.quoted.single"
+		},
+		"integer": {
+			"match": "\\d+",
+			"name": "constant.numeric.integer"
+		},
+		"block-expression": {
+			"begin": "\\(|\\{|\\[",
+			"end": "\\)|\\}|\\]",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.paren.open"
+				}
+			},
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.paren.close"
+				}
+			},
+			"name": "expression.group",
+			"patterns": [
+				{
+					"include": "#expression"
+				}
+			]
+		}
+	}
+}

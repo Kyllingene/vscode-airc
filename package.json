@@ -1,0 +1,35 @@
+{
+  "name": "airc-language",
+  "displayName": "Air Language",
+  "description": "Air language highlighting + snippets",
+  "version": "0.1.0",
+  "publisher": "kyllingene",
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "airc",
+        "extensions": [
+          ".air"
+        ],
+        "aliases": [
+          "air",
+          "airc"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "airc",
+        "scopeName": "source.airc",
+        "path": "./airc.tmGrammar.json"
+      }
+    ]
+  }
+}
