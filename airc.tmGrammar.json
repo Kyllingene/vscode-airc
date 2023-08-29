@@ -18,6 +18,9 @@
 					"include": "#math"
 				},
 				{
+					"include": "#macro"	
+				},
+				{
 					"include": "#char"
 				},
 				{
@@ -39,6 +42,10 @@
 		"math": {
 			"match": "^\\s*(add|sub|mul|div|eq|neq)",
 			"name": "keyword.operator"
+		},
+		"macro": {
+			"match": "^\\s*[a-zA-Z]+",
+			"name": "keyword"
 		},
 		"char": {
 			"match": "'.|\\n'",
