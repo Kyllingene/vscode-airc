@@ -36,7 +36,7 @@
 			"name": "keyword.other"
 		},
 		"control": {
-			"match": "^\\s*(ifn|if|loop|end)",
+			"match": "^\\s*(ifn|if|loop|endif|end)",
 			"name": "keyword.control"
 		},
 		"math": {
