@@ -48,7 +48,7 @@
 			"name": "keyword"
 		},
 		"char": {
-			"match": "'.|\\n'",
+			"match": "'(.|\\\\n)'",
 			"name": "string.quoted.single"
 		},
 		"integer": {
