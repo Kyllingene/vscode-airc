@@ -3,6 +3,7 @@
   "displayName": "Air Language",
   "description": "Air language highlighting + snippets",
   "version": "0.1.0",
+  "repository": "https://github.com/Kyllingene/vscode-airc",
   "publisher": "kyllingene",
   "engines": {
     "vscode": "^1.28.0"
