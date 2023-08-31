@@ -35,7 +35,7 @@
 			]
 		},
 		"comment": {
-			"match": ";.*",
+			"match": "^[^(raw)]*;.*",
 			"name": "comment.line.semicolon"	
 		},
 		"op": {
