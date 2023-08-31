@@ -9,6 +9,9 @@
 		"expression": {
 			"patterns": [
 				{
+					"include": "#comment"	
+				},
+				{
 					"include": "#op"
 				},
 				{
@@ -31,8 +34,12 @@
 				}
 			]
 		},
+		"comment": {
+			"match": ";.*",
+			"name": "comment.line.semicolon"	
+		},
 		"op": {
-			"match": "^\\s*(push|set|pop|dup|swpb|swpn|swp|tag|ctg|mtg|rot|out|in|raw)",
+			"match": "^\\s*(push|set|pop|dup|swpb|swpn|swp|tag|ctg|mtg|ptg|rot|out|in|raw)",
 			"name": "keyword.other"
 		},
 		"control": {
